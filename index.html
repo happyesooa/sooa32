@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>신데렐라를 도와줘!</title>
+<style type="text/css">
+
+	body {cursor:url('https://happyesooa.github.io/sooa28/m.png'),auto;}
+	#img1 { position: absolute; top:300px; left:650px; height: 250px;}
+
+
+    .img10{ position: absolute; right:0px; margin-top:55px; width: 38%;}
+    .img11{ position: absolute; right:300px; top:520px; width: 70%; }
+
+	.m10{position: absolute; top: 20px; animation: lo10 1s; animation-fill-mode: forwards;}
+				@keyframes lo10{
+				from{right:0px}
+				to{right:20px}
+	.m11{position: absolute; top: 20px; animation: lo11 1s; transition-delay: 3s;}
+				@keyframes lo11{
+				from{opacity:0.1;}
+				to{opacity: 1;}
+	.m11
+
+</style>
+</head>
+
+<body style="background-image:url('10.png');"> 
+		<audio id="mysound"> <source src="n.mp3" type="audio/mp3"></audio>
+
+		<script> 
+		var imgindex=0; 
+		function image_onclick(){ 
+		  mysound.play();
+		  var arrImage=new Array("1.png", "2.gif", "3.gif", "4.gif", "5.gif","6.gif","7.gif","8.gif"); 
+		  var imgSource=document.getElementById("img1"); 
+		  imgindex++; 
+		  imgSource.src=arrImage[imgindex%arrImage.length]; 
+		} 
+		</script> 
+
+		<img src="11.png" class="img10 collagepic collage m10">
+		<img src="12.png" class="img11 collagepic collage m11">
+
+
+
+	
+<body>  
+<img id="img1" src="1.png" onclick="image_onclick()" /> 
+</body>  
+</html> 
